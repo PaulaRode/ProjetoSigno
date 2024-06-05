@@ -70,6 +70,7 @@ public class ProjetoFinal extends javax.swing.JFrame {
         cbSexo = new javax.swing.JComboBox<>();
         txtAno = new javax.swing.JTextField();
         jLabel3 = new javax.swing.JLabel();
+        jLabel4 = new javax.swing.JLabel();
 
         jList1.setModel(new javax.swing.AbstractListModel<String>() {
             String[] strings = { "Item 1", "Item 2", "Item 3", "Item 4", "Item 5" };
@@ -92,35 +93,36 @@ public class ProjetoFinal extends javax.swing.JFrame {
 
         painelresposta.setBackground(new java.awt.Color(51, 0, 102));
 
-        jLabel1.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
+        jLabel1.setFont(new java.awt.Font("Verdana", 1, 24)); // NOI18N
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel1.setText("RESULTADO");
 
-        jLabel2.setFont(new java.awt.Font("Arial", 1, 24)); // NOI18N
+        jLabel2.setFont(new java.awt.Font("Verdana", 1, 24)); // NOI18N
         jLabel2.setText("Nome");
 
         txtRNome.setFont(new java.awt.Font("Arial", 1, 24)); // NOI18N
 
-        jLabel5.setFont(new java.awt.Font("Arial", 1, 24)); // NOI18N
+        jLabel5.setFont(new java.awt.Font("Verdana", 1, 24)); // NOI18N
         jLabel5.setText("Signo");
 
         txtRSigno.setFont(new java.awt.Font("Arial", 1, 24)); // NOI18N
 
-        jLabel7.setFont(new java.awt.Font("Arial", 1, 24)); // NOI18N
+        jLabel7.setFont(new java.awt.Font("Verdana", 1, 24)); // NOI18N
         jLabel7.setText("Descrição");
 
         txtRDescricao.setFont(new java.awt.Font("Arial", 1, 24)); // NOI18N
 
-        jLabel9.setFont(new java.awt.Font("Arial", 1, 24)); // NOI18N
+        jLabel9.setFont(new java.awt.Font("Verdana", 1, 24)); // NOI18N
         jLabel9.setText("Idade:");
 
         txtRIdade.setFont(new java.awt.Font("Arial", 1, 24)); // NOI18N
 
-        jLabel11.setFont(new java.awt.Font("Arial", 1, 24)); // NOI18N
+        jLabel11.setFont(new java.awt.Font("Verdana", 1, 24)); // NOI18N
         jLabel11.setText("Cor");
 
         txtRCor.setFont(new java.awt.Font("Arial", 1, 24)); // NOI18N
 
+        jButton1.setFont(new java.awt.Font("Verdana", 0, 13)); // NOI18N
         jButton1.setText("Fechar");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -133,43 +135,42 @@ public class ProjetoFinal extends javax.swing.JFrame {
         painelrespostaLayout.setHorizontalGroup(
             painelrespostaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(painelrespostaLayout.createSequentialGroup()
+                .addGap(40, 40, 40)
                 .addGroup(painelrespostaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(painelrespostaLayout.createSequentialGroup()
-                        .addGap(251, 251, 251)
-                        .addComponent(jLabel1))
-                    .addGroup(painelrespostaLayout.createSequentialGroup()
-                        .addGap(40, 40, 40)
                         .addGroup(painelrespostaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(painelrespostaLayout.createSequentialGroup()
-                                .addGroup(painelrespostaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addGroup(painelrespostaLayout.createSequentialGroup()
-                                        .addComponent(jLabel7)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED))
-                                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, painelrespostaLayout.createSequentialGroup()
-                                        .addComponent(jLabel9)
-                                        .addGap(50, 50, 50)))
-                                .addGroup(painelrespostaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(txtRDescricao, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                    .addGroup(painelrespostaLayout.createSequentialGroup()
-                                        .addComponent(txtRIdade, javax.swing.GroupLayout.PREFERRED_SIZE, 123, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addGap(0, 0, Short.MAX_VALUE))))
+                                .addComponent(jLabel7)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED))
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, painelrespostaLayout.createSequentialGroup()
+                                .addComponent(jLabel9)
+                                .addGap(50, 50, 50)))
+                        .addGroup(painelrespostaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(txtRDescricao, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addGroup(painelrespostaLayout.createSequentialGroup()
-                                .addGroup(painelrespostaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                .addComponent(txtRIdade, javax.swing.GroupLayout.PREFERRED_SIZE, 123, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(0, 0, Short.MAX_VALUE))))
+                    .addGroup(painelrespostaLayout.createSequentialGroup()
+                        .addGroup(painelrespostaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addGroup(javax.swing.GroupLayout.Alignment.LEADING, painelrespostaLayout.createSequentialGroup()
+                                .addGap(211, 211, 211)
+                                .addComponent(jLabel1))
+                            .addGroup(painelrespostaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                .addGroup(painelrespostaLayout.createSequentialGroup()
+                                    .addComponent(jLabel5)
+                                    .addGap(42, 42, 42)
+                                    .addComponent(txtRSigno, javax.swing.GroupLayout.PREFERRED_SIZE, 352, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addGroup(painelrespostaLayout.createSequentialGroup()
+                                    .addComponent(jLabel2)
+                                    .addGap(44, 44, 44)
+                                    .addComponent(txtRNome, javax.swing.GroupLayout.PREFERRED_SIZE, 415, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addGroup(painelrespostaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                    .addComponent(jButton1)
                                     .addGroup(painelrespostaLayout.createSequentialGroup()
-                                        .addComponent(jLabel5)
-                                        .addGap(42, 42, 42)
-                                        .addComponent(txtRSigno, javax.swing.GroupLayout.PREFERRED_SIZE, 352, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                    .addGroup(painelrespostaLayout.createSequentialGroup()
-                                        .addComponent(jLabel2)
-                                        .addGap(44, 44, 44)
-                                        .addComponent(txtRNome, javax.swing.GroupLayout.PREFERRED_SIZE, 415, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                    .addGroup(painelrespostaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                        .addComponent(jButton1)
-                                        .addGroup(painelrespostaLayout.createSequentialGroup()
-                                            .addComponent(jLabel11)
-                                            .addGap(59, 59, 59)
-                                            .addComponent(txtRCor, javax.swing.GroupLayout.PREFERRED_SIZE, 188, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                                .addGap(0, 43, Short.MAX_VALUE)))))
+                                        .addComponent(jLabel11)
+                                        .addGap(59, 59, 59)
+                                        .addComponent(txtRCor, javax.swing.GroupLayout.PREFERRED_SIZE, 188, javax.swing.GroupLayout.PREFERRED_SIZE)))))
+                        .addGap(0, 32, Short.MAX_VALUE)))
                 .addContainerGap())
         );
         painelrespostaLayout.setVerticalGroup(
@@ -202,7 +203,7 @@ public class ProjetoFinal extends javax.swing.JFrame {
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
-        jPanel1.add(painelresposta, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 50, 620, 460));
+        jPanel1.add(painelresposta, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 160, 620, 460));
 
         txtNome.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -279,7 +280,10 @@ public class ProjetoFinal extends javax.swing.JFrame {
         jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ulbra/br/view/zo.jpg"))); // NOI18N
         jLabel3.setText("jLabel3");
         jLabel3.setToolTipText("");
-        jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(-40, -40, 1150, 710));
+        jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1150, 710));
+
+        jLabel4.setText("jLabel4");
+        jPanel1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(1050, 50, -1, -1));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -484,6 +488,7 @@ public class ProjetoFinal extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel9;
